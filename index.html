@@ -27,7 +27,6 @@
 			h1	{
 				text-align:center;
 				font-size:1.55em;
-				border:5px solid rgba(48,199,59);
 				padding:20px;
 				color:#eee;
 				background-color:#111;
@@ -52,12 +51,22 @@
 				color:white;
 				background-color:#222;
 				transition: 0.3s;
+				border-color:darkgreen;
 			}
 		
 			img {
 				width:40px;
 				display:block;
-				background-color:rgb(48,199,59);
+				
+			}
+			
+			@media screen and (min-width: 700px) {
+				
+				li, h1 {
+					max-width:60%;
+					background-color:black;
+					
+				}
 			}
 	
 		</style>
