@@ -3,59 +3,67 @@
 	<head>
 		<title>Spotify Lists</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-		<meta content="device-width" initial-scale="1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-		* {
-	list-style:none;
-	text-decoration: none;
-	
-	font-size:20px;
-	text-align:left;
-	background-color: #222;
-	padding: 20px;
-	font-family: 'Open-sans', 'sans-serif', 'Arial', 'Helvetica';
-			font-family: 'Montserrat', sans-serif;
-	margin:0 auto;
-	padding-left:0;
-			padding-right:0;
-			max-width:90vw;
-}
+
+			
+			* {
+					margin: 0 auto;
+				box-sizing: border-box;
+				font-family: 'Montserrat', sans-serif;
+			}
 			
 			body {
-				color: white;
-				max-width:100%;
-			}
+			text-align:left;
+			background-color: #222;
+			padding: 20px;
+			
+			padding-left:0;
+			padding-right:0;
+			max-width:102vw;
+}
+			
+			
 			h1	{
 				text-align:center;
-				font-size:1.25em;
-				border:3px solid green;
-				
+				font-size:1.55em;
+				border:5px solid rgba(48,199,59);
+				padding:20px;
+				color:#eee;
+				background-color:#111;
 				transition:0.3s;
 			}
-		 li  {border:1px solid rgba(000,000,000);
-				border:1px solid green;
-							
+			
+			a {
+				color:white;
+				text-decoration: none;
+				
+				padding-left: none;
+			}
+			
+		 li  {
+				border:1px solid rgba(48,199,59);
+				list-style:none;
+				text-decoration:none;
+				color:#eee;
 				text-align:left;
-				padding-left:20px;
+				padding:20px;
+				padding-left:10px;
 				color:white;
 				background-color:#222;
 				transition: 0.3s;
 			}
-			li a {
-				color:white;
-				font-size: 28px;
+		
+			img {
+				width:40px;
+				display:block;
+				background-color:rgb(48,199,59);
 			}
-			
-			@media screen and (max-width:800px) {
-				li, h1 {
-					max-width: 100%;
-					transition:0.3s;
-				}
-			}
+	
 		</style>
 	</head>
 	<body>
-		<header><h1>Spotify Lists</h1></header>
+		<header><h1>Spotify Lists <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/17/2b/35/172b35b1-264d-4dbf-23fc-a84fa5bca692/source/512x512bb.jpg" alt="Spotify Icon"></h1></header>
 
 <div>
 	<li><a href="https://open.spotify.com/playlist/24MzOWsAS37tzojWquy6fG?si=zIhiCxJKS0Kx0L-TQqgDjw">Terra</a></li>
@@ -78,7 +86,8 @@
 	
 	<li><a href="https://open.spotify.com/playlist/6K0ZyLWHOiLiZon2PueuJl?si=xZVgdkrkTCinch1IqLDDJw">Love Montage</a></li>
 	
-	<li><a href="https://open.spotify.com/playlist/428YR5Db7GXTY9yrB2Thmr?si=GsQtssFHQUSD3oB5hpO65Q">1Starred</a></li>
+	<li id="1starred"><a href="https://open.spotify.com/playlist/428YR5Db7GXTY9yrB2Thmr?si=GsQtssFHQUSD3oB5hpO65Q">1Starred</a></li>
+	
 
 </div>
 	</body>
