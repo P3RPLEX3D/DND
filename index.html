@@ -29,18 +29,28 @@
 				text-align:center;
 				font-size:1.25em;
 				border:3px solid green;
+				max-width:52vw;
+				transition:0.3s;
 			}
 		 li  {border:1px solid rgba(000,000,000);
 				border:1px solid green;
-							
+							max-width:50vw;
 				text-align:left;
 				padding-left:20px;
 				color:white;
 				background-color:#222;
+				transition: 0.3s;
 			}
 			li a {
 				color:white;
 				font-size: 16px;
+			}
+			
+			@media screen and (max-width:800px) {
+				li, h1 {
+					max-width: 100%;
+					transition:0.3s;
+				}
 			}
 		</style>
 	</head>
